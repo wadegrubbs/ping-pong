@@ -8,10 +8,10 @@ describe ('pingPong', function () {
    expect(pingPong("9")).to.equal("ping")
  });
 
- // it("is not valid numerical input", function () {
- //   expect(pingPong("words")).to.equal("true")
- // });
- //
+ it("is divisible by 5 and not 15", function () {
+   expect(pingPong("10")).to.equal("pong")
+ });
+ 
  // it("is not valid numerical input", function () {
  //   expect(pingPong("words")).to.equal("true")
  // });

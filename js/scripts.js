@@ -10,6 +10,11 @@ var pingPong = function ( number ) {
     return "pong";
   }
 
+  else if (number % 15 === 0) {
+    return "pingpong";
+  }
+
+
 
 
 }

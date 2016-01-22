@@ -5,7 +5,7 @@ describe ('pingPong', function () {
  });
 
  it("is divisible by 3 and not 15", function () {
-   expect(pingPong("3")).to.equal("true")
+   expect(pingPong("9")).to.equal("ping")
  });
 
  // it("is not valid numerical input", function () {

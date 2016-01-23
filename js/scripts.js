@@ -1,28 +1,42 @@
 var pingPong = function ( number ) {
-
-var number;
   // if (number.isNaN) {
   //   return "true";
   // }
+  // var number;
+  var array = [];
+  var result;
+    console.log(number);
+  for(var i = 1; i <= number; i++) {
 
   if ((number % 3 === 0) && (number % 15 !== 0)) {
     // console.log(pingPong(number))
-    return "ping";
+
+    array(i).push("ping");
+
   }
 
   else if ((number % 5 === 0) && (number % 15 !== 0)) {
-    return "pong";
+    // return "pong";
+        array.push("pong");
   }
 
   else if (number % 15 === 0) {
-    return "pingpong";
+    // return "pingpong";
+        array.push("pingpong");
   }
 
   else {
-    return number;
+    // return number;
+        array.push(i);
   }
 
+var result = array.join();
+
+console.log(result);
 }
+
+}
+
 
 var number = pingPong(number)
 $(document).ready(function() {
@@ -35,8 +49,8 @@ $(document).ready(function() {
     console.log(number);
     console.log(result);
 
-    $("#result").show().append("<p>This is " + result + "</p>");
-    $("#result").show();
+    $("#finalResult").show().append("<p>This is " + result + "</p>");
+    // $("#result").show();
     event.preventDefault();
   })
 })
